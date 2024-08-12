@@ -1,0 +1,204 @@
+/* General Styles */
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f7f9;
+  color: #333;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  color: #212529;
+}
+
+.dashboard input[type="text"] {
+  padding: 0.625rem;
+  width: 100%;
+  border-radius: 0.3125rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 1.25rem;
+}
+
+/* Widget Category Styles */
+.widget-category {
+  margin-bottom: 1.875rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.widget-category h2 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-bottom: 0.9375rem;
+  color: #495057;
+}
+
+/* Widgets Container Styles */
+.widgets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.widget {
+  position: relative; 
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #fafafa;
+  width: calc(33.333% - 1rem);
+  box-sizing: border-box;
+  box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1);
+}
+
+.widget button {
+  position: absolute;
+  top: 0.5rem; 
+  right: 0.5rem; 
+  background-color: transparent; 
+  color: #dc3545;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0; 
+  border-radius: 50%; 
+  width: 2rem; 
+  height: 2rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget button::before {
+  font-size: 1.25rem; 
+  line-height: 1;
+}
+
+.widget button:hover {
+  color: #c82333; 
+}
+
+/* Add Widget Button Styles */
+.add-widget-item {
+  border: 1px solid #ddd;
+  border-radius: 0.3125rem;
+  padding: 0.625rem;
+  background-color: #e0f7fa;
+  width: calc(33.333% - 1rem);
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-widget-item h3 {
+  margin: 0;
+  color: #00796b;
+  font-size: 1.125rem;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 1.875rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  z-index: 1000;
+  width: 25rem;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #212529;
+}
+
+.modal label {
+  display: block;
+  margin-bottom: 0.625rem;
+  font-weight: 600;
+}
+
+ 
+.modal select, 
+.modal textarea {
+  width: 100%;
+  padding: 0.625rem;
+  margin: 0.3125rem 0 1rem;
+  border-radius: 0.3125rem;
+  border: 1px solid #ccc;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+}
+
+.add-widgets-btn,
+.modal button {
+  margin-top: 0.625rem;
+  padding: 0.625rem 1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.3125rem;
+  font-size: 0.875rem;
+}
+
+.modal button:hover {
+  background-color: #0056b3;
+}
+
+/* Widget List Styles */
+.widget-list {
+  margin-top: 0.625rem;
+  max-height: 15.625rem;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+  background-color: #fff;
+}
+
+.widget-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.625rem;
+}
+
+.widget-item input[type="checkbox"] {
+  margin-right: 0.625rem;
+}
+
+.widget-item label {
+  flex-grow: 1;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Modal Overlay Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
